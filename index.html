@@ -6,6 +6,7 @@
 </head>
 <body>
 	<h3>Тестовое задание для курсов от SENLA</h3>
+	<hr/>		
 	<div class="task">
 		<p>Задание 1</p>
 		<input type="text" placeholder="Число N" id="task1">
@@ -98,8 +99,8 @@
 
     	$('#calculate3').click(function(){
   			$('#result3').text(checkIntersection(
-  				$('x1').val(), $('y1').val(), $('x2').val(), $('y2').val(),
-  				$('x3').val(), $('y3').val(), $('x4').val(), $('y4').val()
+  				$('#x1').val(), $('#y1').val(), $('#x2').val(), $('#y2').val(),
+  				$('#x3').val(), $('#y3').val(), $('#x4').val(), $('#y4').val()
   			));
 		});
 
@@ -114,7 +115,6 @@
     	$('#calculate6').click(function(){
   			$('#result6').text(clearCharNumber($('#text').val()));
 		});
-
     </script>
 </body>
 </html>

@@ -76,11 +76,13 @@ function checkIntersection(x1,y1,x2,y2,x3,y3,x4,y4) {
   var b2 = y3 - k2 * x3;
   
   var x0 = (b2 - b1)/(k1 - k2);
-  var y0 = k1 * x0 + b1;
+  var y0 = k1 * x0 + b1; 
+
   
   if (((x0-x1)/(x2-x1)==(y0-y1)/(y2-y1)) &&
   ((x0-x3)/(x4-x3)==(y0-y3)/(y4-y3))){
-    return 'Точка пересечения отрезков x='+x0+' y='+y0;
+    var resultStr = 'Точка пересечения отрезков x='+x0+' y='+y0;
+    return resultStr;
   }
 }
 
